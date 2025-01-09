@@ -1,0 +1,11 @@
+pandas
+pyyaml
+ccxt
+lightgbm
+scikit-learn
+joblib
+python-dotenv
+click
+loguru
+pandas_ta
+numpy
