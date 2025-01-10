@@ -1,0 +1,22 @@
+binance:
+  api_key: "YOUR_BINANCE_API_KEY"
+  secret_key: "YOUR_BINANCE_SECRET_KEY"
+exchange:
+  mode: "paper"            # "paper" or "live"
+symbol: "BTC/USDT"
+history_days: 60
+interval: "1h"
+model:
+  num_leaves: 64
+  learning_rate: 0.01
+  n_estimators: 200
+strategy:
+  profit_target_pct: 1.0      # Take-profit percentage
+  stop_loss_pct: 0.5          # Stop-loss percentage
+  risk_per_trade_pct: 1.0     # % of account balance risked per trade
+  max_position_size: 0.1      # Max % of account balance per position
+logging:
+  level: "INFO"            # DEBUG, INFO, WARNING, ERROR
+backtest:
+  initial_balance: 10000     # USD
+  fee_pct: 0.1               # Trading fees per trade
